@@ -58,9 +58,7 @@ turn_right(90);
 	//last refers to the degree of the line wrt the robot, positive is right
 	//now is the current position of the line
 	if (at_line()) {
-	var now = 0;
-	//go forward
-	go_forward(2);
+		go_forward(2);
 	} else {
 		//find the line! keeps turning to the left to find the line
 		turn_left(25);
