@@ -42,7 +42,7 @@ turn_right(90);
 //Task 3
 (function task3() {
 	//checks for line
-	if (at_line()) {
+	if (!at_line()) {
 	go_forward(5);
 	} else {
 	turn_right(30);
@@ -55,8 +55,6 @@ turn_right(90);
 
 //Task 4
 (function task4() {
-	//last refers to the degree of the line wrt the robot, positive is right
-	//now is the current position of the line
 	if (at_line()) {
 		go_forward(2);
 	} else {
