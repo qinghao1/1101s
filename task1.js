@@ -54,7 +54,7 @@ turn_right(90);
 })()
 
 //Task 4
-(function task4(last) {
+(function task4() {
 	//last refers to the degree of the line wrt the robot, positive is right
 	//now is the current position of the line
 	if (at_line()) {
@@ -62,19 +62,11 @@ turn_right(90);
 	//go forward
 	go_forward(2);
 	} else {
-		var turn_degree = 25;
-		//find the line! checks 90 to the left first, followed by to the right
-		//turn left if line was in the middle
-		if (last >= 0 && last <= 90) {
-			turn_left(turn_degree);
-			var now = last + turn_degree;
-		} else {
-			turn_right(turn_degree);
-			var now = last - turn_degree;
-		}
+		//find the line! keeps turning to the left to find the line
+		turn_left(25);
 	}
 	//timeout in ms
 	ev3.pause(timeout);
 	//repeat
-	task4(now);
-})(0)
+	task4();
+})()
