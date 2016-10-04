@@ -90,4 +90,4 @@ turn_right(90);
 	ev3.pause(timeout);
 	//repeat
 	task4(now, dir);
-})()
+})(0, 'l')
