@@ -13,14 +13,14 @@ function go_forward(distance) { //distance is in cm
 	ev3.runForTime(motorB, 1000, distance * 24);
 }
 
-function turn_left(degree) {
-	ev3.runForTime(motorA, 1000, -degree / 90 * 235);
-	ev3.runForTime(motorB, 1000, degree / 90 * 235);
+function turn_left(dg){
+    ev3.runForDistance(motorA, -dg / 90 * 190, 100);
+    ev3.runForDistance(motorB, dg / 90 * 190, 100);
 }
 
-function turn_right(degree) {
-	ev3.runForTime(motorA, 1000, degree / 90 * 235);
-	ev3.runForTime(motorB, 1000, -degree / 90 * 235);
+function turn_right(dg){
+    ev3.runForDistance(motorA, dg / 90 * 190, 100);
+    ev3.runForDistance(motorB, -dg / 90 * 190, 100);
 }
 
 var light_threshold = 50; //TO BE CONFIRMED
