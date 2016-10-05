@@ -12,4 +12,4 @@ require('./helper.js');
 	ev3.pause(timeout);
 	//repeat
 	return task3();
-})()
+})();

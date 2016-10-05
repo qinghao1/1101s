@@ -4,6 +4,7 @@ var source = require('./node_modules/ev3source/source.js');
 
 var motorA = ev3.motorA();
 var motorB = ev3.motorB();
+var colorSensor = ev3.colorSensor();
 
 //HELPER FUNCTIONS
 

@@ -1,3 +1,5 @@
+require('./helper.js');
+
 (function task4(degree, curr) { 
 //degree is current bearing relative to last seen line (clockwise is positive)
 //curr is current rotation direction (l,r)
