@@ -50,7 +50,7 @@ turn_right(90);
 	//timeout in ms
 	ev3.pause(timeout);
 	//repeat
-	task3();
+	return task3();
 })()
 
 //Task 4
@@ -89,5 +89,5 @@ turn_right(90);
 	//timeout in ms
 	ev3.pause(timeout);
 	//repeat
-	task4(now, dir);
+	return task4(now, dir);
 })(0, 'l')
