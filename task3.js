@@ -6,6 +6,7 @@ require('./helper.js');
 	if (!at_line()) {
 	go_forward(2);
 	} else {
+	go_forward(-5);
 	turn_right(30);
 	}
 	//timeout in ms

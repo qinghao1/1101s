@@ -23,7 +23,7 @@ function turn_right(dg){
     ev3.runForDistance(motorB, Math.floor(-dg / 90 * 190), 100);
 }
 
-var light_threshold = 50; //TO BE CONFIRMED
+var light_threshold = 40; //TO BE CONFIRMED
 
 function at_line() {
 	return ev3.reflectedLightIntensity(colorSensor) < light_threshold;
