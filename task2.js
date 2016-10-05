@@ -1,3 +1,3 @@
 require('./helper.js');
 
-go_forward(10);
+turn_right(90);
