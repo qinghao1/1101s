@@ -9,8 +9,8 @@ var colorSensor = ev3.colorSensor();
 //HELPER FUNCTIONS
 
 function go_forward(distance) { //distance is in cm
-	ev3.runForTime(motorA, 1, distance * 24);
-	ev3.runForTime(motorB, 1, distance * 24);
+	ev3.runForTime(motorA, 1000, distance * 24);
+	ev3.runForTime(motorB, 1000, distance * 24);
 }
 
 function turn_left(degree) {
