@@ -47,6 +47,7 @@ function find_line() {
 			angle -= delta;
 		}
 	}
+	angle = 0;
 }
 
 while(true) {
