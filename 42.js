@@ -16,8 +16,8 @@ function forward() {
 }
 
 function backward() {
-    ev3.runForDistance(motorA, 100, 500);
-    ev3.runForDistance(motorB, 100, 500);
+    ev3.runForDistance(motorA, 100, 1000);
+    ev3.runForDistance(motorB, 100, 1000);
 }
 
 function turn_car(angle) {
