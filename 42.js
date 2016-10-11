@@ -36,7 +36,7 @@ var dir = 1; //1 is right -1 is left
 function find_line() {
 	var delta = 15;
 	while (!at_line()) {
-		if (angle + delta > 60) {
+		if (Math.abs(angle) + delta > 60) {
 			dir = -dir;
 		}
 		if (dir > 0) {
