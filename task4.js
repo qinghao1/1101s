@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 require('./helper.js');
 
 (function task4(degree, curr) { 
@@ -36,4 +37,4 @@ require('./helper.js');
 	ev3.pause(timeout);
 	//repeat
 	return task4(now, dir);
-})(0, 'l')
+})(0, 'l');
