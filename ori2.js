@@ -126,7 +126,7 @@ function attack() {
 
 function defend() {
     while (back_attack()) {
-        brake();
+        backward();
     }
 }
 
@@ -136,9 +136,9 @@ turn_car(180);
 
 function main() {
     brake();
+    defend();
     while (enemy) {
         attack();
-        defend();
     } else {
         safety();
         turn_enemy();
